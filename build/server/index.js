@@ -4,6 +4,7 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration, ServerRouter, UNSAFE_w
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 import { jsx, jsxs } from "react/jsx-runtime";
+import { Search } from "@carbon/react";
 //#region \0rolldown/runtime.js
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -123,45 +124,6 @@ var ErrorBoundary = UNSAFE_withErrorBoundaryProps(function ErrorBoundary({ error
 	});
 });
 //#endregion
-//#region app/welcome/welcome.tsx
-function Welcome() {
-	return /* @__PURE__ */ jsx("main", {
-		className: "flex items-center justify-center pt-16 pb-4",
-		children: /* @__PURE__ */ jsxs("div", {
-			className: "flex-1 flex flex-col items-center gap-16 min-h-0",
-			children: [/* @__PURE__ */ jsx("header", {
-				className: "flex flex-col items-center gap-9",
-				children: /* @__PURE__ */ jsx("div", {
-					className: "w-[500px] max-w-[100vw] p-4",
-					children: "HI SUSAN"
-				})
-			}), /* @__PURE__ */ jsx("div", {
-				className: "max-w-[300px] w-full space-y-6 px-4",
-				children: /* @__PURE__ */ jsxs("nav", {
-					className: "rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4",
-					children: [/* @__PURE__ */ jsx("p", {
-						className: "leading-6 text-gray-700 dark:text-gray-200 text-center",
-						children: "What's next?"
-					}), /* @__PURE__ */ jsx("ul", { children: resources.map(({ href, text }) => /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", {
-						className: "group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500",
-						href,
-						target: "_blank",
-						rel: "noreferrer",
-						children: text
-					}) }, href)) })]
-				})
-			})]
-		})
-	});
-}
-var resources = [{
-	href: "https://reactrouter.com/docs",
-	text: "React Router Docs"
-}, {
-	href: "https://rmx.as/discord",
-	text: "Join Discord"
-}];
-//#endregion
 //#region app/routes/home.tsx
 var home_exports = /* @__PURE__ */ __exportAll({
 	default: () => home_default,
@@ -173,15 +135,29 @@ function meta({}) {
 		content: "Welcome to React Router!"
 	}];
 }
-var home_default = UNSAFE_withComponentProps(function Home() {
-	return /* @__PURE__ */ jsx(Welcome, {});
+var home_default = UNSAFE_withComponentProps(function MyHome() {
+	return /* @__PURE__ */ jsx("div", {
+		style: { width: 800 },
+		children: /* @__PURE__ */ jsx(Search, {
+			closeButtonLabelText: "Clear search input",
+			id: "search-default-1",
+			labelText: "Site search",
+			placeholder: "Placeholder text",
+			size: "md",
+			type: "search"
+		})
+	});
 });
 //#endregion
 //#region \0virtual:react-router/server-manifest
 var server_manifest_default = {
 	"entry": {
-		"module": "/assets/entry.client-DXuI2VCX.js",
-		"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/errorBoundaries-UiQwaJj2.js"],
+		"module": "/assets/entry.client-D1g0fEp5.js",
+		"imports": [
+			"/assets/jsx-runtime-BX8PHkDG.js",
+			"/assets/react-dom-BjShxATO.js",
+			"/assets/errorBoundaries-UiQwaJj2.js"
+		],
 		"css": []
 	},
 	"routes": {
@@ -198,9 +174,13 @@ var server_manifest_default = {
 			"hasClientMiddleware": false,
 			"hasDefaultExport": true,
 			"hasErrorBoundary": true,
-			"module": "/assets/root-CvAzptpY.js",
-			"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/errorBoundaries-UiQwaJj2.js"],
-			"css": ["/assets/root-ufohMJ2w.css"],
+			"module": "/assets/root-DDSdJMN8.js",
+			"imports": [
+				"/assets/jsx-runtime-BX8PHkDG.js",
+				"/assets/react-dom-BjShxATO.js",
+				"/assets/errorBoundaries-UiQwaJj2.js"
+			],
+			"css": ["/assets/root-DiPYr-MY.css"],
 			"clientActionModule": void 0,
 			"clientLoaderModule": void 0,
 			"clientMiddlewareModule": void 0,
@@ -219,8 +199,8 @@ var server_manifest_default = {
 			"hasClientMiddleware": false,
 			"hasDefaultExport": true,
 			"hasErrorBoundary": false,
-			"module": "/assets/home-FumpHjCH.js",
-			"imports": ["/assets/jsx-runtime-BX8PHkDG.js"],
+			"module": "/assets/home-BZC5-t0X.js",
+			"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/react-dom-BjShxATO.js"],
 			"css": [],
 			"clientActionModule": void 0,
 			"clientLoaderModule": void 0,
@@ -228,8 +208,8 @@ var server_manifest_default = {
 			"hydrateFallbackModule": void 0
 		}
 	},
-	"url": "/assets/manifest-7d47437c.js",
-	"version": "7d47437c",
+	"url": "/assets/manifest-32c0dc09.js",
+	"version": "32c0dc09",
 	"sri": void 0
 };
 //#endregion
