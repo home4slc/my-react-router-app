@@ -135,7 +135,7 @@ function meta({}) {
 		content: "Welcome to React Router!"
 	}];
 }
-var home_default = UNSAFE_withComponentProps(function MyHome() {
+var home_default = UNSAFE_withComponentProps(function Home() {
 	return /* @__PURE__ */ jsx("div", {
 		style: { width: 800 },
 		children: /* @__PURE__ */ jsx(Search, {
