@@ -47,6 +47,7 @@
     "@ibm/plex-serif@2.0.0": true,
     "@parcel/watcher@2.6.0": true,
     "fsevents@2.3.3": true,
-    "@carbon/react@1.116.0": true
+    "@carbon/react@1.116.0": true,
+    "@carbon/utilities@0.25.0": true
   }
 }
