@@ -10,8 +10,11 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div>
-      <div
+    <html>
+      <link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/738c9608/site_favicon_16_1712177973140.ico" />
+
+      <div>
+        {/* <div
         style={{
           width: 800
         }}
@@ -24,155 +27,156 @@ export default function Home() {
           size="md"
           type="search"
         />
+      </div> */}
+        <div>
+          <Table
+            aria-label="sample table"
+            size="lg"
+          >
+            <TableHead>
+              <TableRow>
+                <TableHeader>
+                  Name
+                </TableHeader>
+                <TableHeader>
+                  Rule
+                </TableHeader>
+                <TableHeader>
+                  Status
+                </TableHeader>
+                <TableHeader>
+                  Other
+                </TableHeader>
+                <TableHeader>
+                  Example
+                </TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 1
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Starting
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 2
+                </TableCell>
+                <TableCell>
+                  DNS delegation
+                </TableCell>
+                <TableCell>
+                  Active
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 3
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Disabled
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 4
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Disabled
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 5
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Disabled
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 6
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Disabled
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  Load Balancer 7
+                </TableCell>
+                <TableCell>
+                  Round robin
+                </TableCell>
+                <TableCell>
+                  Disabled
+                </TableCell>
+                <TableCell>
+                  Test
+                </TableCell>
+                <TableCell>
+                  22
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
       </div>
-      <div>
-        <Table
-          aria-label="sample table"
-          size="lg"
-        >
-          <TableHead>
-            <TableRow>
-              <TableHeader>
-                Name
-              </TableHeader>
-              <TableHeader>
-                Rule
-              </TableHeader>
-              <TableHeader>
-                Status
-              </TableHeader>
-              <TableHeader>
-                Other
-              </TableHeader>
-              <TableHeader>
-                Example
-              </TableHeader>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>
-                Load Balancer 1
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Starting
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 2
-              </TableCell>
-              <TableCell>
-                DNS delegation
-              </TableCell>
-              <TableCell>
-                Active
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 3
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Disabled
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 4
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Disabled
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 5
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Disabled
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 6
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Disabled
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>
-                Load Balancer 7
-              </TableCell>
-              <TableCell>
-                Round robin
-              </TableCell>
-              <TableCell>
-                Disabled
-              </TableCell>
-              <TableCell>
-                Test
-              </TableCell>
-              <TableCell>
-                22
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-    </div>
+    </html>
   )
 }
 

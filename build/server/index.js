@@ -4,7 +4,7 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration, ServerRouter, UNSAFE_w
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 import { jsx, jsxs } from "react/jsx-runtime";
-import { Search } from "@carbon/react";
+import { Search, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@carbon/react";
 //#region \0rolldown/runtime.js
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -130,13 +130,13 @@ var home_exports = /* @__PURE__ */ __exportAll({
 	meta: () => meta
 });
 function meta({}) {
-	return [{ title: "New React Router App" }, {
+	return [{ title: "Bay Oaks U16G ECNL-RL Player Highlights" }, {
 		name: "description",
-		content: "Welcome to React Router!"
+		content: "Highlights for players - add and view"
 	}];
 }
 var home_default = UNSAFE_withComponentProps(function Home() {
-	return /* @__PURE__ */ jsx("div", {
+	return /* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx("div", {
 		style: { width: 800 },
 		children: /* @__PURE__ */ jsx(Search, {
 			closeButtonLabelText: "Clear search input",
@@ -146,18 +146,74 @@ var home_default = UNSAFE_withComponentProps(function Home() {
 			size: "md",
 			type: "search"
 		})
-	});
+	}), /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs(Table, {
+		"aria-label": "sample table",
+		size: "lg",
+		children: [/* @__PURE__ */ jsx(TableHead, { children: /* @__PURE__ */ jsxs(TableRow, { children: [
+			/* @__PURE__ */ jsx(TableHeader, { children: "Name" }),
+			/* @__PURE__ */ jsx(TableHeader, { children: "Rule" }),
+			/* @__PURE__ */ jsx(TableHeader, { children: "Status" }),
+			/* @__PURE__ */ jsx(TableHeader, { children: "Other" }),
+			/* @__PURE__ */ jsx(TableHeader, { children: "Example" })
+		] }) }), /* @__PURE__ */ jsxs(TableBody, { children: [
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 1" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Starting" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 2" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "DNS delegation" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Active" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 3" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Disabled" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 4" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Disabled" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 5" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Disabled" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 6" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Disabled" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] }),
+			/* @__PURE__ */ jsxs(TableRow, { children: [
+				/* @__PURE__ */ jsx(TableCell, { children: "Load Balancer 7" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Round robin" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Disabled" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "Test" }),
+				/* @__PURE__ */ jsx(TableCell, { children: "22" })
+			] })
+		] })]
+	}) })] });
 });
 //#endregion
 //#region \0virtual:react-router/server-manifest
 var server_manifest_default = {
 	"entry": {
-		"module": "/assets/entry.client-D1g0fEp5.js",
-		"imports": [
-			"/assets/jsx-runtime-BX8PHkDG.js",
-			"/assets/react-dom-BjShxATO.js",
-			"/assets/errorBoundaries-UiQwaJj2.js"
-		],
+		"module": "/assets/entry.client-DXuI2VCX.js",
+		"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/errorBoundaries-UiQwaJj2.js"],
 		"css": []
 	},
 	"routes": {
@@ -175,11 +231,7 @@ var server_manifest_default = {
 			"hasDefaultExport": true,
 			"hasErrorBoundary": true,
 			"module": "/assets/root-DDSdJMN8.js",
-			"imports": [
-				"/assets/jsx-runtime-BX8PHkDG.js",
-				"/assets/react-dom-BjShxATO.js",
-				"/assets/errorBoundaries-UiQwaJj2.js"
-			],
+			"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/errorBoundaries-UiQwaJj2.js"],
 			"css": ["/assets/root-DiPYr-MY.css"],
 			"clientActionModule": void 0,
 			"clientLoaderModule": void 0,
@@ -199,8 +251,8 @@ var server_manifest_default = {
 			"hasClientMiddleware": false,
 			"hasDefaultExport": true,
 			"hasErrorBoundary": false,
-			"module": "/assets/home-BZC5-t0X.js",
-			"imports": ["/assets/jsx-runtime-BX8PHkDG.js", "/assets/react-dom-BjShxATO.js"],
+			"module": "/assets/home-cWObjzsc.js",
+			"imports": ["/assets/jsx-runtime-BX8PHkDG.js"],
 			"css": [],
 			"clientActionModule": void 0,
 			"clientLoaderModule": void 0,
@@ -208,8 +260,8 @@ var server_manifest_default = {
 			"hydrateFallbackModule": void 0
 		}
 	},
-	"url": "/assets/manifest-32c0dc09.js",
-	"version": "32c0dc09",
+	"url": "/assets/manifest-502ed798.js",
+	"version": "502ed798",
 	"sri": void 0
 };
 //#endregion
