@@ -9,6 +9,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@carbon/react": "^1.116.0",
     "@react-router/node": "^8",
     "@react-router/serve": "^8.3.1",
     "cross-env": "^10.1.0",
@@ -16,6 +17,7 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router": "^8",
+    "sass": "^1.104.1",
     "serve": "^14.2.6"
   },
   "devDependencies": {
@@ -27,5 +29,25 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "vite": "^8.0.3"
+  },
+  "allowScripts": {
+    "@carbon/colors@11.58.0": true,
+    "@carbon/feature-flags@1.9.0": true,
+    "@carbon/grid@11.62.0": true,
+    "@carbon/icon-helpers@10.82.0": true,
+    "@carbon/icons-react@11.88.0": true,
+    "@carbon/layout@11.59.0": true,
+    "@carbon/motion@11.52.0": true,
+    "@carbon/styles@1.115.0": true,
+    "@carbon/themes@11.81.0": true,
+    "@carbon/type@11.67.0": true,
+    "@carbon/utilities@0.25.0": true,
+    "@ibm/plex@6.4.1": true,
+    "@ibm/plex-mono@2.5.0": true,
+    "@ibm/plex-sans@1.1.0": true,
+    "@ibm/plex-serif@2.0.0": true,
+    "@parcel/watcher@2.6.0": true,
+    "fsevents@2.3.3": true,
+    "@carbon/react@1.116.0": true
   }
 }
