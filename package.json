@@ -41,7 +41,6 @@
     "@carbon/styles@1.115.0": true,
     "@carbon/themes@11.81.0": true,
     "@carbon/type@11.67.0": true,
-    "@carbon/utilities@0.25.0": true,
     "@ibm/plex@6.4.1": true,
     "@ibm/plex-mono@2.5.0": true,
     "@ibm/plex-sans@1.1.0": true,
